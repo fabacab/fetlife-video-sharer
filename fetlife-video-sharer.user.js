@@ -6,7 +6,7 @@
  */
 // ==UserScript==
 // @name           FetLife Video Sharer
-// @version        0.1
+// @version        0.1.1
 // @namespace      com.maybemaimed.fetlife
 // @updateURL      https://userscripts.org/scripts/source/162865.user.js
 // @description    Lets you share videos on FetLife with anyone for free.
@@ -53,15 +53,26 @@ FL_VIDSHARE.main = function () {
         trigger_el.setAttribute('data-opens-modal', id);
         trigger_el.setAttribute('data-opens-modal', id);
         trigger_el.innerHTML = '(share this video)';
-        document.body.appendChild(trigger_el);
         var before = vid_links[i];
         before.parentNode.insertBefore(trigger_el, before.nextSibling);
     }
-};
-
-FL_VIDSHARE.showPopup = function (e) {
-    console.log(e);
-    var id = e.target.getAttribute('id');
+    var sv = document.getElementById('video');
+    if (sv) {
+        // Grab the direct video link.
+        var m = sv.innerHTML.match(/videocdn\.fetlife\.com\/videos\/\S+\/encoded\.mp4$/);
+        if (m) {
+            FL_VIDSHARE.injectDialog('fetlife-video-sharer-share-this-video', 'https://' + m[0]);
+            var trigger_el = document.createElement('a');
+            trigger_el.setAttribute('class', 'opens-modal');
+            trigger_el.setAttribute('data-opens-modal', 'fetlife-video-sharer-share-this-video');
+            trigger_el.setAttribute('data-opens-modal', 'fetlife-video-sharer-share-this-video');
+            trigger_el.setAttribute('href', '#');
+            trigger_el.innerHTML = '<strong><big>Share this video!</big></strong>';
+            var li = document.createElement('li');
+            li.appendChild(trigger_el);
+            document.querySelector('li.duration').parentNode.appendChild(li);
+        }
+    }
 };
 
 FL_VIDSHARE.injectDialog = function (id, vid_url) {
