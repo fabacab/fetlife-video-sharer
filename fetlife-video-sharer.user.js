@@ -6,7 +6,7 @@
  */
 // ==UserScript==
 // @name           FetLife Video Sharer
-// @version        0.1.1
+// @version        0.1.2
 // @namespace      com.maybemaimed.fetlife
 // @updateURL      https://userscripts.org/scripts/source/162865.user.js
 // @description    Lets you share videos on FetLife with anyone for free.
@@ -59,8 +59,9 @@ FL_VIDSHARE.main = function () {
     var sv = document.getElementById('video');
     if (sv) {
         // Grab the direct video link.
-        var m = sv.innerHTML.match(/videocdn\.fetlife\.com\/videos\/\S+\/encoded\.mp4$/);
+        var m = sv.innerHTML.match(/videocdn\.fetlife\.com\/videos\/\S+\/encoded\.mp4/);
         if (m) {
+            FL_VIDSHARE.log('Found match in #video element.');
             FL_VIDSHARE.injectDialog('fetlife-video-sharer-share-this-video', 'https://' + m[0]);
             var trigger_el = document.createElement('a');
             trigger_el.setAttribute('class', 'opens-modal');
@@ -92,6 +93,8 @@ FL_VIDSHARE.injectDialog = function (id, vid_url) {
     html_string += '</a>';
     html_string += '</div>';
     html_string += '<div data-modal-title="Share this video!" data-modal-height="280" data-modal-auto-open="false" class="modal ui-dialog-content ui-widget-content" id="' + id + '">';
+    html_string += '<p>The <em style="font-size:larger;">free, direct link</em> to this video is:</p>';
+    html_string += '<p><a href="' + vid_url + '">' + vid_url + '</a></p>';
     html_string += '<p>How would you like to help others get their perv on?</p>';
     html_string += '<p id="' + id + '-actions" class="ac">';
     html_string += '<a rel="nofollow" href="https://twitter.com/intent/tweet/?text=' + encodeURIComponent(vid_url) + '" target="_blank">Tweet link to video</a>';

@@ -1,6 +1,12 @@
 # FetLife Video Sharer
 
-The FetLife Video Sharer user script makes it easy to share FetLife Videos with anyone on the Internet. Any FetLife Video can be shared with anyone else, whether they have a FetLife profile or not, all for free.
+The FetLife Video Sharer user script makes it easy to share FetLife Videos with anyone on the Internet. Any FetLife Video you can view on FetLife can be shared with anyone else, whether they have a FetLife profile or not, all for free. Pool your resources with your buddies; have everyone chip in for ONE and ONLY one paid FetLife membership and then use this tool to share paywalled FetLife videos amongst your friends without paying. Shared links never expire, so save the link this tool extracts and create bookmarks you can browse back to later, without this tool.
+
+## How FetLife Video Sharer works
+
+Each video on FetLife is embedded on a webpage just like a YouTube video, with a unique Web address. If you know the Web address of a particular video, you can load and watch it even without being logged in to a FetLife account. This tool simply inspects the HTML source of the FetLife Video page and extracts the video's web address. Once you have the Web address of a video, you never need to log in to FetLife to view that video ever again.
+
+Spread the love! Help your friends get their perv on without paying FetLife any additional money!
 
 ## System requirements
 
@@ -26,13 +32,15 @@ If [maybemaimed.com is censored](http://maybemaimed.com/where-im-censored/) wher
 
 ## Using
 
-To use FetLife Video Sharer, [log in to your FetLife.com account](https://fetlife.com/login) and go to any video page on. In the right-hand sidebar, under the "VID411" heading, click the "Share this video!" link:
+To use FetLife Video Sharer, [log in to your FetLife.com account](https://fetlife.com/login) and go to any video page on FetLife. In the right-hand sidebar, under the "VID411" heading, click the "Share this video!" link:
 
 ![Screenshot of FetLife Video Sharer "Share this link!" link.](http://i.imgur.com/shZ2Ldy.png)
 
 You will be presented with a pop-up dialog that offers you several different options for how you'd like to share the direct link to the video.
 
 ![Screenshot of FetLife Video Sharer sharing options pop-up window.](http://i.imgur.com/3sfFljR.png)
+
+A direct, free link will also be shown. Simply bookmark that link or share it with your friends so that you can return to watch that video *even when you are not logged in to FetLife*. By compiling many video links, you can create a freely available, no subscription required, never-expiring directory of previously for-pay video content. Enjoy for yourself and help others do the same at no charge!
 
 ## Frequently Asked Questions
 
@@ -42,12 +50,16 @@ Before you report a new issue with FetLife Video Sharer, please check to ensure 
 
 ### Do I need a FetLife account to view a video someone else shared?
 
-Nope! Anyone can view a video from FetLife. A FetLife account is not required. To learn more about why this is so, please see the following detailed articles:
+Nope! Anyone can view a video from FetLife using the free, direct link extracted with this tool. A FetLife account is not required to view the video, only to share the free direct link the first time. To learn more about why this is so, please see the following detailed articles:
 
 * [The privacy information FetLife doesn't want you to read](http://maybemaimed.com/2012/09/26/the-privacy-information-fetlife-doesnt-want-you-to-read/)
 * [Some Notes on FetLife's (In)Security](http://maybemaimed.com/2012/08/13/guest-post-some-notes-about-fetlifes-insecurity/)
 
 ## Change log
+
+* Version 0.1.2:
+    * Easier link sharing via direct link.
+    * Fixed bug where some videos were not identified correctly.
 
 * Version 0.1.1:
     * Initial release.
