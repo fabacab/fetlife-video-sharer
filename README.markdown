@@ -22,9 +22,9 @@ If you use the [Google Chrome](https://chrome.google.com/) web browser (version 
 
 ## Installing
 
-To install FetLife Video Sharer, go to [http://maybemaimed.com/playground/fetlife-video-sharer/](http://maybemaimed.com/playground/fetlife-video-sharer/) and click the "[Download and install](https://userscripts.org/scripts/source/162865.user.js)" near the middle of the page:
+To install FetLife Video Sharer, go to [http://maybemaimed.com/playground/fetlife-video-sharer/](http://maybemaimed.com/playground/fetlife-video-sharer/) and click the "[Download and install](https://github.com/meitar/fetlife-video-sharer/raw/master/fetlife-video-sharer.user.js)" near the middle of the page:
 
-> [Download and install FetLife Video Sharer](https://userscripts.org/scripts/source/162865.user.js)
+> [Download and install FetLife Video Sharer](https://github.com/meitar/fetlife-video-sharer/raw/master/fetlife-video-sharer.user.js)
 
 If you enjoy this script, please consider tossing a few metaphorical coins in [my cyberbusking hat](http://maybemaimed.com/cyberbusking/). :) Your donations are sincerely appreciated! Can't afford to part with any coin? It's cool. [Tweet your appreciation, instead](https://twitter.com/intent/tweet?text=Did+you+know+you+can+watch+%40FetLife+videos+for+free%3F+%40maymaym%27s+%23FetLife+Video+Sharer+http%3A%2F%2Fmaybemaimed.com%2Fplayground%2Ffetlife-video-sharer%2F+makes+it+easy+to+share+%27em+all%21).
 

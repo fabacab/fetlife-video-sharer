@@ -8,7 +8,7 @@
 // @name           FetLife Video Sharer
 // @version        0.1.2
 // @namespace      com.maybemaimed.fetlife
-// @updateURL      https://userscripts.org/scripts/source/162865.user.js
+// @updateURL      https://github.com/meitar/fetlife-video-sharer/raw/master/fetlife-video-sharer.user.js
 // @description    Lets you share videos on FetLife with anyone for free.
 // @include        https://fetlife.com/*
 // @grant          GM_addStyle
